@@ -1,19 +1,19 @@
 const { User } = require("../models/User");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const OpenAI = require("openai/index.mjs");
+// const bcrypt = require("bcryptjs");
+// const jwt = require("jsonwebtoken");
+// const OpenAI = require("openai/index.mjs");
 const axios = require("axios");
-const { model, default: mongoose } = require("mongoose");
-const language = require("@google-cloud/language");
-const Journal = require("../models/Journal");
+// const { model, default: mongoose } = require("mongoose");
+// const language = require("@google-cloud/language");
+// const Journal = require("../models/Journal");
 
 async function resumereview(req, res, next) {
   try {
-    const { text } = req.body; // Extract resume text from frontend input
+    const { text } = req.body;
     const apiKey = process.env.GEMINI_API;
 
     const apiUrl =
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
 
     let formattedText = text
       .replace(

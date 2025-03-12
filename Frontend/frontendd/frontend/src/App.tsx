@@ -27,7 +27,7 @@ function App() {
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path={'/findJobs'} element={<FindJobs />} />
-          <Route path={'/careers'} element={<CareerPage />} />
+          <Route path={'/careers'} element={<SkillRating />} />
           <Route path={'/PersonalisedRoadmap'} element={<PersonalisedRoadmap />} />
           <Route path={'/resumereview'} element={<ResumeReview />} />
           <Route path={'/generateResume'} element={<ResumeGenerator />} />

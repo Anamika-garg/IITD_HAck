@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const userRoutes = require("./router/userRoutes");
 const jobsRoutes = require("./router/jobsRoutes");
-const postRoutes = require("./router/postRoutes");
+// const postRoutes = require("./router/postRoutes");
 const TestRoute = require("./router/test.js");
 // const DoubtRoute = require("./router/doubt.js");
 const app = express();
@@ -23,7 +23,7 @@ app.use(cors());
 
 app.use("/api/user", userRoutes);
 app.use("/api/job", jobsRoutes);
-app.use("/api/post", postRoutes);
+// app.use("/api/post", postRoutes);
 app.use("/api/test" , TestRoute)
 // app.use("/api/doubt" , DoubtRoute)
 
