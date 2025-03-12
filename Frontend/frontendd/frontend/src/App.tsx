@@ -13,6 +13,7 @@ import ResumeReview from './pages/ResumeResult';
 import ResumeGenerator from './pages/generateResume';
 import Resume from './pages/Resume';
 import CareerPage from './pages/Career';
+import CareerGuidance from './pages/CareerGuidance';
 
 
 function App() {
@@ -27,11 +28,13 @@ function App() {
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path={'/findJobs'} element={<FindJobs />} />
-          <Route path={'/careers'} element={<SkillRating />} />
+          <Route path={'/careers'} element={<CareerPage />} />
           <Route path={'/PersonalisedRoadmap'} element={<PersonalisedRoadmap />} />
           <Route path={'/resumereview'} element={<ResumeReview />} />
           <Route path={'/generateResume'} element={<ResumeGenerator />} />
           <Route path={'/resume'} element={<Resume />} />
+          <Route path={'/skillrating'} element={<SkillRating />} />
+          <Route path={'/careerguidance'} element={<CareerGuidance />} />
         </Routes>
       </div>
     </Router>
